@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculadora</title>
+	<script>
+	function calcula(operacio)
+	{
+		var numero1 = document.calculadora.numero1.value
+		var numero2 = document.calculadora.numero2.value 
+		var result = eval(numero1 + operacio + numero2)
+		document.calculadora.resultat.value = result
+	}
+	</script> 
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header style="">
+	<div id="capçalera">
+	<h1 class="titolPrincipal">CALCULADORA</h1>
+	</div>
+</header>
+<form name="calculadora">
+	<input type="Text" name="numero1" value="0" size="15">
+	<br>
+	<input type="Text" name="numero2" value="0" size="15">
+	<br>
+	<input type="Button" name="" value=" + " onclick="calcula('+')" >
+	<input type="Button" name="" value=" - " onclick="calcula('-')">
+	<input type="Button" name="" value=" x " onclick="calcula('*')">
+	<input type="Button" name="" value=" / " onclick="calcula('/')">
+	<br>
+	<input type="Text" name="resultat" value="0" size="15">
+	</form>
+</body>
+</html>
